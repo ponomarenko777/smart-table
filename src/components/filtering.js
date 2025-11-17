@@ -25,7 +25,8 @@ export function initFiltering(elements) {
 
       const wrapper = action.closest(".filter-wrapper");
       if (wrapper) {
-        const input = wrapper.querySelector("input, select");
+        // Очищаем ТОЛЬКО input 
+        const input = wrapper.querySelector("input");
         if (input) input.value = "";
       }
 
